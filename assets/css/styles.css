@@ -18,13 +18,16 @@ body{margin:0;min-height:100vh;background:var(--bg);color:var(--text);font-famil
 .site-header a:hover{color:var(--rose);}
 .brand,.logo-text,h1,h2{font-family:"Playfair Display",Georgia,serif;}
 .brand{color:var(--rose);font-size:1.4rem;font-weight:700;}
+.brand-lockup{display:inline-flex;align-items:center;gap:.55rem;}
+.brand-lockup img{width:2rem;height:2rem;object-fit:contain;}
+.hero-logo{width:clamp(6rem,18vw,11rem);height:auto;margin-inline:auto;margin-bottom:.5rem;display:block;filter:drop-shadow(0 10px 18px rgba(0,0,0,.10));}
 .nav-cta{color:var(--rose)!important;font-weight:800;}
 .menu-toggle{display:none;border:1px solid var(--border);background:rgba(255,255,255,.45);border-radius:999px;padding:.7rem 1rem;color:var(--rose);font-weight:800;}
 .page-shell{width:min(100% - 2rem,1100px);margin-inline:auto;padding:clamp(1.5rem,4vw,4rem) 0;}
 .panel{background:var(--panel);border:1px solid var(--border);border-radius:24px;box-shadow:0 12px 40px rgba(0,0,0,.08);backdrop-filter:blur(14px);padding:clamp(1.5rem,4vw,4rem);}
 .section-panel{margin-top:2rem;}
 .hero{text-align:center;}
-.logo-text{font-size:clamp(2.5rem,7vw,5rem);color:var(--rose);margin-bottom:.25rem;font-weight:700;}
+.logo-text{font-size:clamp(2.5rem,7vw,5rem);color:var(--rose);margin:.25rem 0;font-weight:700;}
 .logo-subtitle{text-transform:uppercase;letter-spacing:.35rem;color:var(--sage);margin-bottom:2rem;}
 h1,h2,h3{line-height:1.15;}
 h1{font-size:clamp(2rem,5vw,4rem);margin-bottom:1.5rem;}
