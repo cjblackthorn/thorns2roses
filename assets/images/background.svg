@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-label="Soft abstract rose and leaf background">
+  <rect width="1600" height="1000" fill="#f6f1e8"/>
+  <circle cx="140" cy="150" r="260" fill="#556b57" opacity="0.16"/>
+  <circle cx="1460" cy="840" r="320" fill="#9d2735" opacity="0.13"/>
+  <circle cx="1320" cy="130" r="190" fill="#d9c8b8" opacity="0.34"/>
+  <path d="M-40 710 C260 600 470 840 760 700 C990 590 1100 430 1640 560" fill="none" stroke="#556b57" stroke-width="3" opacity="0.18"/>
+  <path d="M-20 760 C250 650 500 930 810 760 C1050 630 1190 520 1620 640" fill="none" stroke="#9d2735" stroke-width="3" opacity="0.13"/>
+  <g opacity="0.28" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M115 825 C170 700 260 645 365 610" stroke="#556b57" stroke-width="5"/>
+    <path d="M205 720 C145 705 100 675 65 625 C135 635 185 665 205 720Z" fill="#556b57" stroke="#556b57" opacity="0.42"/>
+    <path d="M285 645 C360 605 430 610 500 655 C415 690 350 680 285 645Z" fill="#556b57" stroke="#556b57" opacity="0.36"/>
+    <path d="M365 610 C390 535 470 510 530 555 C500 545 470 565 445 615 C420 590 395 585 365 610Z" fill="#9d2735" stroke="#9d2735" opacity="0.55"/>
+    <path d="M445 615 C485 555 545 550 580 600 C555 660 495 690 435 660 C438 645 442 630 445 615Z" fill="#9d2735" stroke="#9d2735" opacity="0.42"/>
+  </g>
+  <g opacity="0.20" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M1450 145 C1370 255 1280 320 1165 365" stroke="#556b57" stroke-width="5"/>
+    <path d="M1340 255 C1410 250 1465 275 1515 325 C1440 325 1385 300 1340 255Z" fill="#556b57" stroke="#556b57" opacity="0.38"/>
+    <path d="M1200 350 C1150 400 1095 420 1035 410 C1085 365 1140 345 1200 350Z" fill="#556b57" stroke="#556b57" opacity="0.35"/>
+    <path d="M1165 365 C1135 300 1075 275 1015 305 C1050 310 1075 335 1090 385 C1115 360 1140 350 1165 365Z" fill="#9d2735" stroke="#9d2735" opacity="0.48"/>
+  </g>
+</svg>
