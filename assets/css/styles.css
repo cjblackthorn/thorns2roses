@@ -16,6 +16,7 @@ body{
   background:var(--bg);
   color:var(--text);
   font-family:Arial,system-ui,sans-serif;
+  line-height:1.7;
 }
 .site-bg{
   position:fixed;
@@ -69,6 +70,9 @@ body{
   box-shadow:0 12px 40px rgba(0,0,0,.08);
   padding:clamp(1.5rem,4vw,4rem);
 }
+.section-panel{
+  margin-top:2rem;
+}
 .hero{text-align:center;}
 .logo-text{
   font-size:clamp(2.5rem,7vw,5rem);
@@ -82,16 +86,43 @@ body{
   color:var(--sage);
   margin-bottom:2rem;
 }
+h1,h2,h3{
+  line-height:1.15;
+}
 h1{
   font-size:clamp(2rem,5vw,4rem);
-  line-height:1.1;
   margin-bottom:1.5rem;
+}
+h2{
+  font-size:clamp(1.8rem,4vw,3rem);
 }
 .lead{
   max-width:800px;
   margin-inline:auto;
-  line-height:1.8;
   color:var(--muted);
+}
+.eyebrow{
+  text-transform:uppercase;
+  letter-spacing:.2rem;
+  color:var(--sage);
+  font-size:.85rem;
+}
+.card-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:1.5rem;
+  margin-top:2rem;
+}
+.service-card{
+  background:rgba(255,255,255,.45);
+  border:1px solid var(--border);
+  border-radius:20px;
+  padding:1.5rem;
+}
+.split-panel{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:2rem;
 }
 .button-row{
   display:flex;
@@ -112,4 +143,19 @@ h1{
 .secondary{
   border:1px solid var(--sage);
   color:var(--sage);
+}
+:focus-visible{
+  outline:3px solid var(--rose);
+  outline-offset:3px;
+}
+@media (max-width:800px){
+  .split-panel{
+    grid-template-columns:1fr;
+  }
+}
+@media (max-width:700px){
+  .site-header{
+    flex-direction:column;
+    align-items:flex-start;
+  }
 }
