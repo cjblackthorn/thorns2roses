@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 300" role="img" aria-labelledby="title desc">
+  <title id="title">Thorns2Roses rose mark</title>
+  <desc id="desc">A stylized red rose with sage leaves and a thorned stem.</desc>
+  <path d="M142 266 C126 205 148 157 196 92" fill="none" stroke="#556b57" stroke-width="8" stroke-linecap="round"/>
+  <path d="M136 214 C100 196 75 160 57 109" fill="none" stroke="#556b57" stroke-width="7" stroke-linecap="round"/>
+  <path d="M96 176 C61 176 40 159 24 130 C64 139 88 152 96 176Z" fill="#556b57" opacity="0.72"/>
+  <path d="M122 217 C91 235 59 235 31 220 C70 210 100 207 122 217Z" fill="#556b57" opacity="0.62"/>
+  <path d="M190 165 C228 139 266 143 301 164 C258 182 222 181 190 165Z" fill="#556b57" opacity="0.64"/>
+  <path d="M195 104 C229 76 260 72 294 84 C262 111 231 120 195 104Z" fill="#556b57" opacity="0.58"/>
+  <path d="M190 46 C221 -2 286 8 307 54 C281 47 260 57 239 84 C224 64 211 52 190 46Z" fill="#9d2735"/>
+  <path d="M173 53 C198 37 224 49 239 84 C226 119 189 125 163 101 C157 81 160 64 173 53Z" fill="#b54452"/>
+  <path d="M242 84 C263 56 294 54 315 77 C303 122 267 146 229 133 C235 113 239 98 242 84Z" fill="#8f2431"/>
+  <path d="M204 58 C230 52 255 62 267 83" fill="none" stroke="#f6f1e8" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+  <path d="M225 84 C242 75 262 80 277 96" fill="none" stroke="#f6f1e8" stroke-width="5" stroke-linecap="round" opacity="0.58"/>
+  <path d="M190 70 C207 88 217 108 215 130" fill="none" stroke="#f6f1e8" stroke-width="5" stroke-linecap="round" opacity="0.48"/>
+</svg>
