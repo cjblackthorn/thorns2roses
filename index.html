@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Thorns2Roses Coaching</title>
   <meta name="description" content="Relationship and life coaching for communication, identity, and personal growth.">
+  <meta name="theme-color" content="#f6f1e8">
+  <meta property="og:title" content="Thorns2Roses Coaching">
+  <meta property="og:description" content="Helping people navigate relationships, communication, identity, and personal growth.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -12,7 +19,8 @@
   <div class="site-bg" aria-hidden="true"></div>
   <header class="site-header">
     <a class="brand" href="#home">Thorns2Roses</a>
-    <nav aria-label="Main navigation">
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" aria-label="Main navigation">
       <a href="#coaching">Coaching</a>
       <a href="#about">About</a>
       <a href="#process">Process</a>
@@ -21,7 +29,7 @@
     </nav>
   </header>
   <main id="main" class="page-shell">
-    <section id="home" class="panel hero">
+    <section id="home" class="panel hero reveal">
       <p class="logo-text">Thorns2Roses</p>
       <p class="logo-subtitle">Coaching</p>
       <h1>Helping People Navigate Relationships, Communication, Identity, and Personal Growth</h1>
@@ -32,7 +40,7 @@
       </div>
     </section>
 
-    <section id="coaching" class="panel section-panel">
+    <section id="coaching" class="panel section-panel reveal">
       <p class="eyebrow">How we help</p>
       <h2>Coaching for the messy, human parts of life.</h2>
       <div class="card-grid">
@@ -43,81 +51,40 @@
       </div>
     </section>
 
-    <section id="about" class="panel section-panel split-panel">
-      <div>
-        <p class="eyebrow">About</p>
-        <h2>Growth does not erase what hurt. It gives you somewhere to go next.</h2>
-      </div>
-      <div>
-        <p>Thorns2Roses Coaching exists for people trying to build healthier relationships, communicate more honestly, understand themselves more clearly, and move through life with more intention.</p>
-        <p>Coaching is not about pretending things are easy. It is about naming patterns, building practical tools, and choosing growth without shame.</p>
-      </div>
+    <section id="about" class="panel section-panel split-panel reveal">
+      <div><p class="eyebrow">About</p><h2>Growth does not erase what hurt. It gives you somewhere to go next.</h2></div>
+      <div><p>Thorns2Roses Coaching exists for people trying to build healthier relationships, communicate more honestly, understand themselves more clearly, and move through life with more intention.</p><p>Coaching is not about pretending things are easy. It is about naming patterns, building practical tools, and choosing growth without shame.</p></div>
     </section>
 
-    <section id="process" class="panel section-panel">
+    <section id="process" class="panel section-panel reveal">
       <p class="eyebrow">The process</p>
       <h2>Simple, grounded, and focused on real life.</h2>
       <div class="process-grid">
-        <article class="process-card">
-          <span class="step-number">01</span>
-          <h3>Start with what is happening</h3>
-          <p>We identify the relationship, communication, life, or self-worth patterns creating stress or keeping you stuck.</p>
-        </article>
-
-        <article class="process-card">
-          <span class="step-number">02</span>
-          <h3>Clarify what needs to change</h3>
-          <p>We define goals, boundaries, values, and practical shifts that help life feel more honest and workable.</p>
-        </article>
-
-        <article class="process-card">
-          <span class="step-number">03</span>
-          <h3>Build tools you can use</h3>
-          <p>We work on communication, reflection, and practical tools that support growth outside the session.</p>
-        </article>
+        <article class="process-card"><span class="step-number">01</span><h3>Start with what is happening</h3><p>We identify the relationship, communication, life, or self-worth patterns creating stress or keeping you stuck.</p></article>
+        <article class="process-card"><span class="step-number">02</span><h3>Clarify what needs to change</h3><p>We define goals, boundaries, values, and practical shifts that help life feel more honest and workable.</p></article>
+        <article class="process-card"><span class="step-number">03</span><h3>Build tools you can use</h3><p>We work on communication, reflection, and practical tools that support growth outside the session.</p></article>
       </div>
     </section>
 
-    <section id="faq" class="panel section-panel">
+    <section id="faq" class="panel section-panel reveal">
       <p class="eyebrow">Questions</p>
       <h2>Frequently asked questions</h2>
-
       <div class="faq-list">
-        <details>
-          <summary>Is coaching therapy?</summary>
-          <p>No. Coaching is not therapy, psychiatric care, diagnosis, or crisis treatment. Coaching focuses on communication, goals, growth, and practical support.</p>
-        </details>
-
-        <details>
-          <summary>Do you work with couples?</summary>
-          <p>Relationship coaching may include individuals or partners depending on goals, availability, and fit.</p>
-        </details>
-
-        <details>
-          <summary>Are sessions virtual?</summary>
-          <p>Yes. This site is designed around virtual-first coaching and online scheduling.</p>
-        </details>
-
-        <details>
-          <summary>What topics fit coaching?</summary>
-          <p>Communication, boundaries, conflict patterns, self-worth, burnout, identity, life transitions, and rebuilding healthier patterns.</p>
-        </details>
+        <details><summary>Is coaching therapy?</summary><p>No. Coaching is not therapy, psychiatric care, diagnosis, or crisis treatment. Coaching focuses on communication, goals, growth, and practical support.</p></details>
+        <details><summary>Do you work with couples?</summary><p>Relationship coaching may include individuals or partners depending on goals, availability, and fit.</p></details>
+        <details><summary>Are sessions virtual?</summary><p>Yes. This site is designed around virtual-first coaching and online scheduling.</p></details>
+        <details><summary>What topics fit coaching?</summary><p>Communication, boundaries, conflict patterns, self-worth, burnout, identity, life transitions, and rebuilding healthier patterns.</p></details>
       </div>
     </section>
 
-    <section id="contact" class="panel section-panel cta-panel">
+    <section id="contact" class="panel section-panel cta-panel reveal">
       <p class="eyebrow">Ready when you are</p>
       <h2>Growth does not mean you were never hurt. It means you chose not to stop growing.</h2>
       <p>Booking links, consultation details, pricing, and contact information can be connected here when your scheduling system is ready.</p>
-      <div class="button-row">
-        <a class="button primary" href="mailto:hello@example.com">Contact Thorns2Roses</a>
-      </div>
+      <div class="button-row"><a class="button primary" href="mailto:hello@example.com">Contact Thorns2Roses</a></div>
     </section>
   </main>
-
-  <footer class="site-footer">
-    <p>© 2026 Thorns2Roses Coaching</p>
-    <p class="footer-note">Coaching is not therapy, psychiatric care, diagnosis, or crisis treatment.</p>
-  </footer>
+  <footer class="site-footer"><p>© 2026 Thorns2Roses Coaching</p><p class="footer-note">Coaching is not therapy, psychiatric care, diagnosis, or crisis treatment.</p></footer>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
