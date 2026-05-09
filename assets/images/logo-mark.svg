@@ -1,24 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 300" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 360" role="img" aria-labelledby="title desc">
   <title id="title">Thorns2Roses rose mark</title>
-  <desc id="desc">A red rose with sage leaves and a thorned green stem, based on the Thorns2Roses logo.</desc>
+  <desc id="desc">A red rose with a curved sage stem, thorn, and leaves based on the original Thorns2Roses logo.</desc>
 
-  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M130 258 C125 220 129 186 144 153 C156 126 176 106 204 83" stroke="#496653" stroke-width="9"/>
-    <path d="M128 219 C101 192 81 160 70 120" stroke="#496653" stroke-width="8"/>
-    <path d="M111 181 C86 177 67 163 54 140" stroke="#496653" stroke-width="7"/>
-    <path d="M95 150 L72 158 L95 165" stroke="#496653" stroke-width="7"/>
+  <g fill="none" stroke="#3f604b" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M198 309 C184 248 202 196 242 149 C262 126 286 106 317 82" stroke-width="12"/>
+    <path d="M191 260 C153 222 124 177 107 124" stroke-width="11"/>
+    <path d="M141 189 C105 178 79 153 62 113" stroke-width="10"/>
+    <path d="M122 151 L82 164 L122 178" stroke-width="9"/>
   </g>
 
-  <path d="M145 187 C174 169 207 169 239 187 C205 206 174 206 145 187Z" fill="#496653" opacity="0.92"/>
-  <path d="M174 128 C205 102 239 101 274 121 C241 147 208 151 174 128Z" fill="#496653" opacity="0.86"/>
-  <path d="M92 204 C67 216 40 213 18 198 C47 190 72 191 92 204Z" fill="#496653" opacity="0.76"/>
+  <path d="M223 208 C258 184 304 185 347 211 C301 234 258 235 223 208Z" fill="#3f604b"/>
+  <path d="M252 143 C287 117 326 116 370 138 C330 166 290 170 252 143Z" fill="#3f604b" opacity=".94"/>
+  <path d="M156 250 C122 265 86 259 58 237 C97 229 130 232 156 250Z" fill="#3f604b" opacity=".88"/>
 
-  <path d="M178 64 C198 30 242 21 278 42 C260 42 242 51 228 70 C213 57 197 52 178 64Z" fill="#b32139"/>
-  <path d="M154 73 C177 49 209 51 228 70 C224 102 196 124 164 112 C151 98 148 84 154 73Z" fill="#c74655"/>
-  <path d="M227 70 C248 48 281 51 302 76 C295 112 262 140 225 132 C231 108 231 88 227 70Z" fill="#a51f34"/>
-  <path d="M164 112 C190 121 211 116 225 132 C204 153 168 148 151 124 C154 119 158 115 164 112Z" fill="#8f1c2d"/>
+  <path d="M280 61 C305 20 361 19 394 58 C362 52 334 66 313 97 C303 80 293 69 280 61Z" fill="#ae2037"/>
+  <path d="M239 71 C268 41 300 53 313 97 C300 139 255 149 227 116 C224 97 227 82 239 71Z" fill="#bf3948"/>
+  <path d="M313 97 C340 63 382 69 408 100 C394 151 351 180 305 161 C313 135 317 115 313 97Z" fill="#9e1f33"/>
+  <path d="M227 116 C256 149 289 139 305 161 C280 189 235 178 215 139 C217 129 221 121 227 116Z" fill="#8d1c2e"/>
 
-  <path d="M190 55 C213 52 237 60 252 78" fill="none" stroke="#f7efe6" stroke-width="6" stroke-linecap="round" opacity="0.78"/>
-  <path d="M211 82 C229 70 253 75 269 94" fill="none" stroke="#f7efe6" stroke-width="6" stroke-linecap="round" opacity="0.68"/>
-  <path d="M179 72 C197 88 207 105 207 126" fill="none" stroke="#f7efe6" stroke-width="6" stroke-linecap="round" opacity="0.58"/>
+  <path d="M287 62 C315 58 343 70 360 94" fill="none" stroke="#f5efe6" stroke-width="8" stroke-linecap="round" opacity=".86"/>
+  <path d="M311 99 C334 87 362 95 380 119" fill="none" stroke="#f5efe6" stroke-width="8" stroke-linecap="round" opacity=".78"/>
+  <path d="M268 80 C289 101 301 125 298 155" fill="none" stroke="#f5efe6" stroke-width="8" stroke-linecap="round" opacity=".66"/>
 </svg>
