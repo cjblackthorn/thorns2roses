@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360" role="img" aria-labelledby="title desc">
+  <title id="title">Thorns2Roses rose mark</title>
+  <desc id="desc">A rose with a curved green stem, one thorn, sage leaves, and a red blossom matching the original Thorns2Roses logo style.</desc>
+
+  <g fill="none" stroke="#3f614a" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M158 305 C151 250 163 207 190 171 C208 147 231 128 258 107" stroke-width="11"/>
+    <path d="M153 249 C126 218 105 178 96 128" stroke-width="10"/>
+    <path d="M123 190 C92 177 70 154 58 120" stroke-width="9"/>
+    <path d="M108 155 L76 166 L108 177" stroke-width="8"/>
+  </g>
+
+  <path d="M179 213 C210 190 251 190 289 213 C248 236 210 236 179 213Z" fill="#3f614a"/>
+  <path d="M199 161 C226 137 260 133 297 149 C263 176 229 181 199 161Z" fill="#3f614a" opacity=".92"/>
+  <path d="M125 242 C96 255 65 249 42 229 C75 222 103 225 125 242Z" fill="#3f614a" opacity=".86"/>
+
+  <path d="M226 83 C246 45 295 39 325 72 C301 67 280 76 262 101 C251 91 240 85 226 83Z" fill="#af2137"/>
+  <path d="M194 92 C218 65 247 69 262 101 C253 134 217 147 190 125 C184 111 185 101 194 92Z" fill="#c23a49"/>
+  <path d="M262 101 C284 74 319 77 340 103 C329 144 294 168 257 154 C264 132 266 115 262 101Z" fill="#9d1f33"/>
+  <path d="M190 125 C217 147 245 139 257 154 C236 178 195 172 179 139 C181 132 184 128 190 125Z" fill="#8b1d2f"/>
+
+  <path d="M230 80 C253 78 277 87 291 107" fill="none" stroke="#f5efe6" stroke-width="7" stroke-linecap="round" opacity=".85"/>
+  <path d="M250 106 C270 96 294 103 309 122" fill="none" stroke="#f5efe6" stroke-width="7" stroke-linecap="round" opacity=".75"/>
+  <path d="M217 95 C234 112 244 132 243 153" fill="none" stroke="#f5efe6" stroke-width="7" stroke-linecap="round" opacity=".65"/>
+</svg>
