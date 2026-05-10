@@ -1,0 +1,10 @@
+title: Thorns2Roses Coaching
+description: Relationship and life coaching for communication, identity, boundaries, resilience, and personal growth.
+author: C. J. Blackthorn
+url: "https://thorns2roses.com"
+baseurl: ""
+
+exclude:
+  - README.md
+  - node_modules
+  - vendor
