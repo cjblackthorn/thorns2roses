@@ -1,0 +1,52 @@
+name: Verify coaching policies in real browser
+
+on:
+  push:
+    branches:
+      - main
+      - qa/policy-print-mobile-20261024
+    paths:
+      - '*.html'
+      - assets/css/styles.css
+      - assets/js/main.js
+      - scripts/test_policy_browser.cjs
+      - .github/workflows/policy-browser-qa.yml
+  pull_request:
+    branches: [main]
+    paths:
+      - '*.html'
+      - assets/css/styles.css
+      - assets/js/main.js
+      - scripts/test_policy_browser.cjs
+      - .github/workflows/policy-browser-qa.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  policy-browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+      - name: Install pinned Chromium runner outside website
+        run: |
+          npm install --prefix /tmp/thorns-browser --no-save --no-audit --no-fund playwright@1.56.1
+          /tmp/thorns-browser/node_modules/.bin/playwright install chromium
+      - name: Check browser test JavaScript
+        run: node --check scripts/test_policy_browser.cjs
+      - name: Verify navigation and printable policies without submitting forms
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m http.server 4173 --bind 127.0.0.1 >/tmp/thorns-site.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid" || true' EXIT
+          sleep 2
+          NODE_PATH=/tmp/thorns-browser/node_modules node scripts/test_policy_browser.cjs
