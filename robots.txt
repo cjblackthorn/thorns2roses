@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://cjblackthorn.github.io/thorns2roses/sitemap.xml
+Sitemap: https://thorns2roses.com/sitemap.xml
