@@ -62,7 +62,7 @@ async function main() {
       await button.click();
       assert.equal(await page.evaluate(()=>window.__printRequests),1,file+" did not request browser printing");
       await page.emulateMedia({media:"print"});
-      assert.equal(await button.evaluate(el=>getComputedStyle(el).display),"none",file+" print UI visible in printed document");
+      assert.equal(await page.locator('button[onclick="window.print()"]').evaluate(el=>getComputedStyle(el).display),"none",file+" print UI visible in printed document");
       const section=page.locator("main .panel").first();
       assert.equal(await section.evaluate(el=>getComputedStyle(el).opacity),"1",file+" printable policy hidden by reveal opacity");
       assert.ok((await section.innerText()).length>120,file+" policy content missing");
