@@ -1,0 +1,25 @@
+name: Validate Thorns2Roses static pages
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  site-integrity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out website
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: Validate local files, anchors and printable policy pages
+        run: python3 scripts/validate_site.py
+      - name: Verify website JavaScript syntax
+        run: node --check assets/js/main.js
