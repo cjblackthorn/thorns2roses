@@ -7,6 +7,7 @@ from collections import Counter
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
+from xml.etree import ElementTree
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -84,6 +85,25 @@ def main():
     style = (ROOT / "assets/css/styles.css").read_text(encoding="utf-8")
     if "@media print" not in style:
         problems.append("Missing print stylesheet for PDF-saving action")
+
+    primary = "https://thorns2roses.com/"
+    urls = []
+    for page_file in files:
+        url = primary + ("" if page_file.name == "index.html" else page_file.name)
+        urls.append(url)
+        if f'<link rel="canonical" href="{url}">' not in page_file.read_text(encoding="utf-8"):
+            problems.append(f"{page_file.name}: missing matching canonical")
+    robots = (ROOT / "robots.txt").read_text(encoding="utf-8")
+    if "Sitemap: https://thorns2roses.com/sitemap.xml" not in robots:
+        problems.append("robots.txt does not point to custom-domain sitemap")
+    try:
+        root = ElementTree.parse(ROOT / "sitemap.xml").getroot()
+        tag = "{http://www.sitemaps.org/schemas/sitemap/0.9}"
+        sitemap_urls = [node.text for node in root.findall(f"{tag}url/{tag}loc")]
+        if len(sitemap_urls) != len(urls) or set(sitemap_urls) != set(urls):
+            problems.append("Sitemap XML URLs do not match published coaching HTML pages")
+    except (OSError, ElementTree.ParseError) as exc:
+        problems.append(f"Cannot parse XML sitemap: {exc}")
 
     if problems:
         print("Static site validation FAILED")
